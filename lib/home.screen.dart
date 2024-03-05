@@ -25,7 +25,9 @@ class _HomeScreenState extends State<HomeScreen> {
         title: SvgPicture.asset(Images.insta_logo),
         actions: [
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+
+              },
               icon: SizedBox(
                   width: 24, height: 24, child: SvgPicture.asset(Images.igtv))),
           IconButton(
@@ -583,10 +585,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 const SizedBox(
                   height: 8,
                 ),
-                const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
-                  child: Expanded(
-                      child: Text.rich(
+                const Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    child: Text.rich(
                     TextSpan(
                       children: [
                         TextSpan(
@@ -622,7 +624,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ],
                     ),
-                  )),
+                  ),
+                  ),
                 ),
 
                 //2nd post
@@ -786,10 +789,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 const SizedBox(
                   height: 8,
                 ),
-                const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
-                  child: Expanded(
-                      child: Text.rich(
+                const Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    child: Text.rich(
                     TextSpan(
                       children: [
                         TextSpan(
@@ -825,7 +828,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ],
                     ),
-                  )),
+                  ),
+                  ),
                 ),
 
                 //3rd post
@@ -989,11 +993,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 const SizedBox(
                   height: 8,
                 ),
-                const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
-                  child: Expanded(
-                      flex: 1,
-                      child: Text.rich(
+                const Expanded(
+                  flex: 1,
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    child: Text.rich(
                         TextSpan(
                           children: [
                             TextSpan(
@@ -1028,7 +1032,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ],
                         ),
-                      )),
+                      ),
+                  ),
                 ),
                 const SizedBox(
                   height: 20,
